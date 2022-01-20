@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="StyleGAN-NADA enables training of GANs without access to any training data.">
-  <meta name="keywords" content="StyleGAN-NADA, NADA, SG-NADA">
+        content="Facial video editing with no temporal components">
+  <meta name="keywords" content="Stitch in time, Video GAN, Face Video">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stitch it in Time: GAN-Based Facial Editing of Real Videos</title>
 
@@ -197,30 +197,65 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel-face" class="carousel results-carousel">
-        <div class="item item-car1-vid-1">
-          <div class="carousel-content">
-                  <video id="carousel_1_vid_1" autoplay controls muted loop height="100%">
-                    <source src="static/videos/curry_placeholder.mp4"
-                            type="video/mp4">
-                  </video>
+<!--<section class="hero is-light is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel-face" class="carousel results-carousel">-->
+<!--        <div class="item item-car1-vid-1">-->
+<!--          <div class="carousel-content">-->
+<!--                  <video id="carousel_1_vid_1" autoplay controls muted loop height="100%">-->
+<!--                    <source src="static/videos/obama.mp4"-->
+<!--                            type="video/mp4">-->
+<!--                  </video>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="item item-car1-vid-1">-->
+<!--          <div class="carousel-content">-->
+<!--                  <video id="carousel_1_vid_2" autoplay controls muted loop height="100%">-->
+<!--                    <source src="static/videos/emma.mp4"-->
+<!--                            type="video/mp4">-->
+<!--                  </video>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="item item-car1-vid-2">-->
+<!--          <div class="carousel-content">-->
+<!--                  <video id="carousel_1_vid_3" autoplay controls muted loop height="100%">-->
+<!--                    <source src="static/videos/kamala.mp4"-->
+<!--                            type="video/mp4">-->
+<!--                  </video>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="hero is-light">
+      <div class="container">
+        <!-- Training video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-video-small">
+              <video id="obama" autoplay controls muted height="100%">
+               <source src="static/videos/obama.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="publication-video-small">
+              <video id="emma" autoplay controls muted height="100%">
+               <source src="static/videos/emma.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="publication-video-small">
+              <video id="kamala" autoplay controls muted height="100%">
+               <source src="static/videos/kamala.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
-        <div class="item item-car1-vid-2">
-          <div class="carousel-content">
-                  <video id="carousel_1_vid_2" autoplay controls muted loop height="100%">
-                    <source src="static/videos/curry_placeholder.mp4"
-                            type="video/mp4">
-                  </video>
-          </div>
-        </div>
-        </div>
+        <!--/ Training video. -->
       </div>
-    </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -248,7 +283,7 @@
 </section>
 
 <section class="hero is-light is-small">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="hero-body">
         <!--/ Architecture. -->
         <div class="section-title">
@@ -257,13 +292,10 @@
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-img">
-<!--              <embed id="architecture" src="static/pdf/pipeline.pdf" frameBorder="0" height="100%" width="100%" type="application/pdf"/>-->
-<!--              <img id="architecture" src="static/images/pipeline.jpg"/>-->
-<!--              <iframe src="http://docs.google.com/gview?url=static/pdf/pipeline.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"/>-->
-                  <video id="ablation" autoplay controls muted loop height="100%">
-                    <source src="static/videos/curry_placeholder.mp4" type="video/mp4">
+                  <video id="pipeline" autoplay controls muted loop height="100%">
+                    <source src="static/videos/pipeline.mp4" type="video/mp4">
                   </video>
-                <h2 class="subtitle has-text-centered">The effects of removing key components of our pipeline</h2>
+                <h2 class="subtitle has-text-centered">Video outputs at different stages of our editing pipeline</h2>
             </div>
           </div>
         </div>
@@ -273,6 +305,17 @@
           Instead of using the wrong tools, ruining consistency and working hard to restore it, we analyze the different components of a GAN editing pipeline, determine which ones are consistent, and just use those!
         </p>
         <br>
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <div class="publication-img">
+                    <video id="ablation" autoplay controls muted loop height="100%">
+                      <source src="static/videos/ablation.mp4" type="video/mp4">
+                    </video>
+                  <h2 class="subtitle has-text-centered">Effects of removing / replacing pipeline components</h2>
+            </div>
+          </div>
+          </div>
+
 
         <div class="section-title">
           <h2 id="tldr" class="title is-3">tl;dr?</h2>
@@ -286,7 +329,7 @@
   </section>
 
 <section class="hero is-light is-small">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="hero-body">
         <!--/ Cross Model Interpolation. -->
         <div class="section-title">
@@ -313,7 +356,7 @@
 </section>
 
 <section class="hero">
-      <div class="container is-max-desktop">
+      <div class="container">
         <!-- Training video. -->
         <div class="columns is-centered has-text-centered">
           <div class="column">
