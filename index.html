@@ -9,18 +9,18 @@
   <title>Stitch it in Time: GAN-Based Facial Editing of Real Videos</title>
 
 <!--   Global site tag (gtag.js) - Google Analytics-->
-<!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6C1TW0B90"></script>-->
-<!--  <script>-->
-<!--    window.dataLayer = window.dataLayer || [];-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0Z8X3GX00"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<!--    function gtag() {-->
-<!--      dataLayer.push(arguments);-->
-<!--    }-->
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-<!--    gtag('js', new Date());-->
+    gtag('js', new Date());
 
-<!--    gtag('config', 'G-C6C1TW0B90');-->
-<!--  </script>-->
+    gtag('config', 'G-R0Z8X3GX00');
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -84,7 +84,7 @@
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">Stitch it in Time: GAN-Based Facial Editing of Real Videos</h1>
@@ -142,7 +142,7 @@
 <!--              </span>-->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/"
+                <a href="https://github.com/rotemtzaban/STIT"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -150,29 +150,6 @@
                   <span>Code</span>
                   </a>
               </span>
-
-              <!-- Colab Demo Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="http://colab.research.google.com/github/rinongal/stylegan-nada/blob/main/stylegan_nada.ipynb"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-infinity"></i>-->
-<!--                  </span>-->
-<!--                  <span>Colab</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Replicate Demo Link. -->
-<!--              <span class="link-block">-->
-<!--                <a href="https://replicate.com/rinongal/stylegan-nada"-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--&lt;!&ndash;                  <span>R </span>&ndash;&gt;-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-play"></i>-->
-<!--                  </span>-->
-<!--                  <span>Demo</span>-->
-<!--                </a>-->
-<!--              </span>-->
-
 
             </div>
 
@@ -183,11 +160,11 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+<section class="hero">
+  <div class="container">
     <div class="hero-body">
       <video id="teaser" autoplay controls muted loop height="100%">
-        <source src="static/videos/curry_placeholder.mp4"
+        <source src="static/videos/kamala.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -232,33 +209,31 @@
 
 <section class="hero is-light">
       <div class="container">
-        <!-- Training video. -->
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-video-small">
-              <video id="obama" autoplay controls muted height="100%">
+              <video id="obama" autoplay controls loop muted height="100%">
                <source src="static/videos/obama.mp4" type="video/mp4">
               </video>
             </div>
             <div class="publication-video-small">
-              <video id="emma" autoplay controls muted height="100%">
+              <video id="emma" autoplay controls loop muted height="100%">
                <source src="static/videos/emma.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="publication-video-small">
-              <video id="kamala" autoplay controls muted height="100%">
-               <source src="static/videos/kamala.mp4" type="video/mp4">
-              </video>
-            </div>
+<!--            <div class="publication-video-small">-->
+<!--              <video id="kamala" autoplay controls loop muted height="100%">-->
+<!--               <source src="static/videos/kamala.mp4" type="video/mp4">-->
+<!--              </video>-->
+<!--            </div>-->
           </div>
         </div>
-        <!--/ Training video. -->
       </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container">
     <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <h2 class="title is-3">Don't have time? Skip to the <a href="#tldr">tl;dr</a></h2>
@@ -285,14 +260,13 @@
 <section class="hero is-light is-small">
   <div class="container">
     <div class="hero-body">
-        <!--/ Architecture. -->
         <div class="section-title">
           <h2 class="title is-3 is-centered">So, what's the jist?</h2>
         </div>
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-img">
-                  <video id="pipeline" autoplay controls muted loop height="100%">
+                  <video id="pipeline" controls muted loop height="100%">
                     <source src="static/videos/pipeline.mp4" type="video/mp4">
                   </video>
                 <h2 class="subtitle has-text-centered">Video outputs at different stages of our editing pipeline</h2>
@@ -308,7 +282,7 @@
           <div class="columns is-centered has-text-centered">
             <div class="column">
               <div class="publication-img">
-                    <video id="ablation" autoplay controls muted loop height="100%">
+                    <video id="ablation" controls muted loop height="100%">
                       <source src="static/videos/ablation.mp4" type="video/mp4">
                     </video>
                   <h2 class="subtitle has-text-centered">Effects of removing / replacing pipeline components</h2>
@@ -331,7 +305,6 @@
 <section class="hero is-light is-small">
   <div class="container">
     <div class="hero-body">
-        <!--/ Cross Model Interpolation. -->
         <div class="section-title">
           <h2 class="title is-3 is-centered">What does it look like, compared to the alternatives?</h2>
         </div>
@@ -339,17 +312,23 @@
           Even without optical-flow or other temporal components, our method can tackle complex scenes with motion that destabilizes the state-of-the-art.
         </p>
       <br>
-      <div class="container is-max-desktop">
-        <!-- Interpolation video. -->
+      <div class="container">
         <div class="columns is-centered has-text-centered">
           <div class="column">
-              <video id="interpolation_vid" autoplay controls muted height="80%">
-               <source src="static/videos/curry_placeholder.mp4"
+              <video id="compare_curry" autoplay controls loop muted height="80%">
+               <source src="static/videos/comparison_2.mp4"
                        type="video/mp4">
               </video>
+            <h2 class="subtitle has-text-centered">+Smile</h2>
+
+              <video id="compare_steve" autoplay controls loop muted height="80%">
+               <source src="static/videos/comparison_1.mp4"
+                       type="video/mp4">
+              </video>
+             <h2 class="subtitle has-text-centered">+Young</h2>
           </div>
         </div>
-        <!--/ Interpolation video. -->
+
       </div>
     </div>
   </div>
@@ -357,24 +336,22 @@
 
 <section class="hero">
       <div class="container">
-        <!-- Training video. -->
         <div class="columns is-centered has-text-centered">
           <div class="column">
             <div class="publication-video-small">
-              <video id="training_vid" autoplay controls muted height="100%">
-               <source src="static/videos/curry_placeholder.mp4"
+              <video id="domain_1" autoplay controls loop muted height="100%">
+               <source src="static/videos/domain.mp4"
                        type="video/mp4">
               </video>
-              <h2 class="subtitle has-text-centered">Our method can be applied to real videos, but also to animated media! </h2>
+              <h2 class="subtitle has-text-centered">Our method can be applied not only to real videos, but also to animated media! </h2>
             </div>
           </div>
         </div>
-        <!--/ Training video. -->
       </div>
 </section>
 
 <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
+  <div class="container content">
     <h2 class="title">BibTeX</h2>
     <p>If you find our work useful, please cite our paper:</p>
     <pre><code>@misc{tzaban2022stitch,
@@ -394,7 +371,7 @@
          href="https://arxiv.org/abs/2108.00946">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/rotemtzaban/temporal-pti" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/rotemtzaban/STIT" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
